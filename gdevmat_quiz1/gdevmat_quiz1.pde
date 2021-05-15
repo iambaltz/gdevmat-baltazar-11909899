@@ -1,6 +1,6 @@
 
 float t = 0.0;
-float dt = 0.1;
+float dt = 1;
 float amplitude = 50;
 float frequency = 0.1;
 
@@ -95,5 +95,5 @@ void drawSineWave(){
   circle(x, amplitude * sin(frequency * (t + x)) + 0, 5);
   
   }
-  t+=dt * 20;
+  t+=dt;
 }
