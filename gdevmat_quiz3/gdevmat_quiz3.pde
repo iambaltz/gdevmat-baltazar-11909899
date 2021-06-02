@@ -23,7 +23,7 @@ void draw(){
   color randomColor = color(random(256),random(256),random(256));
   fill(randomColor, random(10,100));
   
-  circle(x, y, (randomGaussian() * 5 * 10));
+  circle(x, y, (randomGaussian() * 50 + 5));
   
   if(frameCounter >= 300){
     background(255);
