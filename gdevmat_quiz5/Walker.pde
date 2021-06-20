@@ -73,8 +73,6 @@ class Walker{
       position.x-=2;
     }
     
-    println(rng);
-    
   }
   
 }

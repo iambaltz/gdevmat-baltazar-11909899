@@ -11,15 +11,9 @@ PVector speed = new PVector(5, 8);
 Walker modifiedWalker = new Walker();
 Walker biasedWalker = new Walker();
 
-void draw(){
+
+void moveAndBounce(){
   background(255);
-  
-  modifiedWalker.randomWalk();
-  biasedWalker.randomWalkBiased();
-  
-  biasedWalker.render();
-  modifiedWalker.render();
-  
   position.add(speed);
   
   if((position.x > Window.right) || (position.x < Window.left)){
@@ -36,4 +30,18 @@ void draw(){
   
   fill(182, 52, 100);
   circle(position.x, position.y, 50);
+  
+}
+void draw(){
+  
+  moveAndBounce();
+  
+  modifiedWalker.randomWalk();
+  biasedWalker.randomWalkBiased();
+  
+  biasedWalker.render();
+  modifiedWalker.render();
+  
+  
+  
 }
