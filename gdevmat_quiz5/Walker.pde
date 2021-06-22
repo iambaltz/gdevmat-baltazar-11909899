@@ -13,39 +13,39 @@ class Walker{
    int rng = int(random(8)); // 0, 1, 2 , 3, 4, 5, 6, 7
    
    if(rng == 0){
-     position.y+=10;
+     position.add(0, 10);
    }
    
    else if(rng == 1){
-     position.y-=10;
+     position.sub(0, 10);
    }
    
    else if(rng == 2){
-    position.x+=10; 
+    position.add(10, 0); 
    }
    
    else if(rng == 3){
-    position.x-=10; 
+    position.sub(10, 0); 
    }
    
    else if(rng == 4){
-    position.y+=10;
-    position.x+=10;
+    position.add(0, 10);
+    position.add(10, 0); 
    }
    
    else if(rng == 5){
-    position.y+=10;
-    position.x-=10;
+    position.add(0, 10);
+    position.sub(10, 0); 
    }
    
    else if(rng == 6){
-    position.y-=10;
-    position.x+=10;
+    position.sub(0, 10);
+    position.add(10, 0); 
    }
    
    else if(rng == 7){
-    position.y-=10;
-    position.x-=10;
+    position.sub(0, 10);
+    position.sub(10, 0); 
    }
    
   }
@@ -58,19 +58,19 @@ class Walker{
     noStroke();
     
     if(rng >= 0.6){
-      position.y+=2;
+      position.add(0, 2);
     }
    
     else if(rng >= 0.4){
-      position.y-=2;
+      position.sub(0, 2);
     }
     
     else if(rng >= 0.2){
-      position.x+=2;
+      position.add(2, 0);
     }
     
     else if(rng >= 0){
-      position.x-=2;
+      position.sub(2, 0);
     }
     
   }
