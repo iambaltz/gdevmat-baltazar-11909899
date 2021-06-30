@@ -27,6 +27,7 @@ void resetEverything(){
    walkers[i].position.y = random(-360, 360);
    
    walkers[i].scale = random(1, 25);
+   walkers[i].alpha = random(10, 100);
    walkers[i].c = color(random(255), random(255), random(255));
    
  }
@@ -35,6 +36,7 @@ void resetEverything(){
    
    target.position.y = random(-360, 360);
    target.scale = 50;
+   target.alpha = 1000;
    target.c = color(255);
    
 }
