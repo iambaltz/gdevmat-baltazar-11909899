@@ -17,16 +17,15 @@ void createWalkers(){
   
   for(int i = 0; i < walkers.length; i++){
         
-    walkers[i] = new Walker();
-    walkers[i].position.x = -500;
-    walkers[i].position.y = 200;
-    
+   walkers[i] = new Walker();
+   walkers[i].position = new PVector(-500, 200);
+   
     walkers[i].r = random(1, 255);
     walkers[i].g = random(1, 255);
     walkers[i].b = random(1, 255);
     walkers[i].a = random(150, 255);
     
-    walkers[i].mass = i + 1;
+    walkers[i].mass = 10 - i;
     walkers[i].scale = walkers[i].mass * 15;
     
   }
